@@ -1,6 +1,6 @@
 const authEvents = require('./auth/events')
 
-const gameEvents = require('./posts/events')
+const postEvents = require('./posts/events')
 
 $(() => {
 	$('#sign-up').on('submit', authEvents.onSignUp)
@@ -10,7 +10,7 @@ $(() => {
 	$('#pre-sign-up').on('click', authEvents.onPreSignUp)
 	$('#back-to-sign-in').on('click', authEvents.onBackToSignIn)
 
-	postsEvents.addHandlers()
+	postEvents.addHandlers()
 })
 
 $(window).on('load', () => $('#CyberAppD').off('click'))
