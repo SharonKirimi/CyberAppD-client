@@ -8,7 +8,7 @@ require('babel-polyfill')
 
 // load manifests
 // javascript entry point
-require('./app/app.js')
+require('./app/app')
 
 // styles
 require('./app/styles/index.scss')

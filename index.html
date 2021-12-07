@@ -1,17 +1,143 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <title>Example</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CyberAppD</title>
 
-      <!-- Do not add `link` tags-->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- Do not add link tags-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-      <!-- Do not add `script` tags-->
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+    <!-- Do not add script tags-->
+
+    <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-    </head>
-    <body>
-      <h1>Browser Template</h1>
-    </body>
+
+  </head>
+
+  <body>
+      <img alt="Company Logo" src="Logo.png">
+        <h1>CyberAppD</h1>
+      <main>
+        <section>
+          <div id="error-message">
+
+          </div>
+          <div id="user-display">
+
+          </div>
+        </section>
+        <section id="before-sign-in">
+          <!-- Sign-up form goes here -->
+          <div class="card sign-up-card">
+            <form id="sign-up" class="card-body">
+              <h3>Sign Up</h3>
+
+              <div>
+                <label for="sign-up-email">Email:</label>
+                <input type="email" id="sign-up-email" name="credentials[email]" required>
+              </div>
+              <div>
+                <label for="sign-up-password">Password:</label>
+                <input type="password" id="sign-up-password" name="credentials[password]" required>
+              </div>
+              <div>
+                <label for="password_confirmation">Password Confirmation:</label>
+                <input type="password" id="password_confirmation" name="credentials[password_confirmation]" required>
+              </div>
+
+              <button class="btn btn-dark">Sign Up</button>
+            </form>
+          </div>
+
+
+          <!-- Sign in -->
+          <div class="card sign-in-card">
+            <form id="sign-in" class="card-body">
+              <h3>Sign In</h3>
+              <div>
+                <label for="sign-in-email">Email:</label>
+                <input type="email" id="sign-in-email" name="credentials[email]" required>
+              </div>
+              <div>
+                <label for="sign-in-password">Password:</label>
+                <input type="password" id="sign-in-password" name="credentials[password]" required>
+              </div>
+
+              <button class="btn btn-dark">Sign-in</button>
+            </form>
+          </div>
+
+          <p id="pre-sign-up">Create an account? <button class="btn btn-outline-light btn-sm">Sign Up</button></p>
+          <p id="back-to-sign-in"><button class="btn btn-outline-light btn-sm">Back to Sign In</button></p>
+        </section>
+        <section id="after-sign-in">
+          <form id="sign-out" class="border">
+            <fieldset>
+              <legend>Sign Out</legend>
+              <button class="btn btn-danger">Sign out</button>
+            </fieldset>
+          </form>
+
+          <form id="change-password" class="border">
+            <fieldset>
+              <legend>Change Password!</legend>
+              <input type="password" name="passwords[old]" placeholder="Old Password" required>
+              <input type="password" name="passwords[new]" placeholder="New Password" required>
+              <button class="btn btn-primary">Change password</button>
+            </fieldset>
+          </form>
+
+          <form id="posts-create" class="border">
+            <fieldset>
+              <legend>Create One Post</legend>
+              <input type="text" name="post[title]" placeholder="Enter Post Title" required>
+              <input type="text" name="post[owner]" placeholder="Enter Post Owner" required>
+              <input type="text" name="post[category]" placeholder="Enter Post category" required>
+              <input type="text" name="post[message]" placeholder="Enter Post message" required>
+              <button class="btn btn-primary">Create Post</button>
+            </fieldset>
+          </form>
+
+          <form id="posts-index" class="border">
+            <fieldset>
+              <legend>Get All posts</legend>
+              <button class="btn btn-primary">Get All Posts</button>
+            </fieldset>
+          </form>
+
+          <form id="posts-show" class="border">
+            <fieldset>
+              <legend>Get One Post</legend>
+              <input type="text" name="post[id]" placeholder="Enter Post ID" required>
+              <button class="btn btn-primary">Get Post</button>
+            </fieldset>
+          </form>
+
+          <form id="posts-delete" class="border">
+            <fieldset>
+              <legend>Delete One Post</legend>
+              <input type="text" name="post[id]" placeholder="Enter Post ID" required>
+              <button class="btn btn-danger">Delete Post</button>
+            </fieldset>
+          </form>
+
+          <form id="posts-update" class="border">
+            <fieldset>
+              <legend>Update One Post</legend>
+              <input type="text" name="post[id]" placeholder="Enter Post ID" required>
+              <input type="text" name="post[title]" placeholder="Enter Post Text" required>
+              <input type="text" name="post[owner]" placeholder="Enter Post Owner" required>
+              <input type="text" name="post[category]" placeholder="Enter Post category" required>
+              <input type="text" name="post[message]" placeholder="Enter Post message" required>
+              <button class="btn btn-primary">Update Movie</button>
+            </fieldset>
+          </form>
+        </section>
+
+        <!-- Add our messaging -->
+        <section>
+          <div id="error-message"></div>
+          <div id="movies-display"></div>
+        </section>
+  </body>
 </html>
