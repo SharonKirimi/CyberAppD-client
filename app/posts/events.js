@@ -56,11 +56,11 @@ const onUpdatePost = function (event) {
 }
 
 const addHandlers = () => {
-	$('#Posts-create').on('submit', onCreatePost)
-	$('#Posts-index').on('submit', onIndexPosts)
-	$('#Posts-show').on('submit', onShowPost)
-	$('#Posts-delete').on('submit', onDeletePost)
-	$('#Posts-update').on('submit', onUpdatePost)
+	$('#posts-create').on('submit', onCreatePost)
+	$('#posts-index').on('submit', onIndexPosts)
+	$('#posts-show').on('submit', onShowPost)
+	$('#posts-delete').on('submit', onDeletePost)
+	$('#posts-update').on('submit', onUpdatePost)
 }
 
 module.exports = {
