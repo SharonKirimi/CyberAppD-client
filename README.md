@@ -131,3 +131,26 @@ Client
 2.  [ ] Troubleshoot/Debug
 3.  [ ] Style
 ```
+
+# API REPO
+
+```md
+![API REPO](https://github.com/Sharonkkk/CyberAppD-project)
+```
+# API DEPLOYED
+
+```md
+![API DEPLOYED](https://calm-spire-01958.herokuapp.com)
+```
+
+# CLIENT REPO
+
+```md
+![CLIENT REPO](https://github.com/Sharonkkk/CyberAppD-client)
+```
+
+# CLIENT DEPLOYED
+
+```md
+![CLIENT DEPLOYED](https://sharonkkk.github.io/CyberAppD-client/)
+```
