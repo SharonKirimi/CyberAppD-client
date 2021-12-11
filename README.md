@@ -10,7 +10,7 @@ This app can be used by individuals as well as companies to keep track of the cy
 
 
 ```md
-* As a user I want to be able to sign up/in/out and change password
+* As a users I want to be able to sign up/in/out and change password
 * As a user I want to be able to create, read, update and delete data in a database
 
 ```
